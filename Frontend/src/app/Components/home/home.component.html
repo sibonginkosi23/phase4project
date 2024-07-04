@@ -1,0 +1,27 @@
+<div class="container" style="margin-top: 50px;">
+    <div class="row">
+        <div class="col">
+            <div class="jumbotron text-center bg-info" style="padding: 30px; border-radius: 15px;">
+                <h1 class="display-3" style="font-weight: bold; color: white;">Kitchen Story</h1>
+                <p style="color: white;">Your best companion to all things grocery related.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="col-8 mx-auto">
+        <div class="card bg-warning" style="border-radius: 15px;">
+            <div class="card-header" style="background-color: #ffcc00; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                <h5 class="text-center" style="font-weight: bold;">Your ultimate shopping cart is only one search away</h5>
+            </div>
+            <div class="card-body">
+                <div class="form-group col-8 mx-auto my-auto">
+                    <input type="text" class="form-control" [(ngModel)]="product" name="product"
+                        placeholder="Search for products..." style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                </div>
+            </div>
+            <div class="card-footer text-center" style="background-color: #ffcc00; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
+                <button (click)="search(product)" class="btn btn-success btn-lg" style="border-radius: 10px;">Search</button>
+            </div>
+        </div>
+    </div>
+</div>
